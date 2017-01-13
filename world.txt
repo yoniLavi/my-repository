@@ -4,9 +4,14 @@ git fetch
 
 Create a new local branch and link it to the remote branch:
 (More precisely the code reads as 'checkout' to a 'new branch' called 'test' that’s linked to 'origin/test'.)
+('checkout' basically means 'switch to' - eg "git checkout master" means switch to branch 'master')
 
 git checkout -b test origin/test
 
 We can see what local branches are available to us by running the following:
 
 git branch
+
+While we’re on the 'master' branch, we can merge the commits on the 'test' branch into the master branch thus:
+
+git merge test
